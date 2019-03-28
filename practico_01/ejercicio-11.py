@@ -3,4 +3,10 @@
 
 
 def es_primo(numero):
-    pass
+    for i in range(2, numero):
+        if (numero % i) == 0:
+            return False
+    return True
+
+assert (es_primo(7)) == True
+assert (es_primo(15)) == False

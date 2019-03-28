@@ -2,4 +2,9 @@
 
 
 def maximo(a, b):
-    pass
+  if a >= b:
+      return a
+  return b
+
+assert maximo (10,5) == 10
+assert maximo (9,18) == 18

@@ -3,4 +3,9 @@
 
 # [1,2,3,4] -> 24
 def multiplicar(lista):
-    pass
+    valor = 1
+    for x in lista:
+        valor = valor * x
+    return valor
+
+assert (multiplicar([1,2,3,4])) == 24

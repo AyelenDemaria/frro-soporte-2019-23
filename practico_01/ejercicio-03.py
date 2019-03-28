@@ -5,4 +5,13 @@
 
 
 def operacion(a, b, multiplicar):
-    pass
+  if multiplicar == True:
+      return (a * b)
+  elif b == 0:
+    return "Operación no valida"
+  return a / b
+
+assert operacion(10, 2, True) == 20
+assert operacion(10, 2, False) == 5.0
+assert operacion(10, 0, False) == "Operación no valida"
+

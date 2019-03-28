@@ -2,5 +2,8 @@
 # y los devuelva transformados a Fahrenheit.
 
 
-def conversor(grados):
-    pass
+def conversor (grados):
+    return (grados * 9/5) + 32
+
+
+assert (conversor(20)) == 68.0
