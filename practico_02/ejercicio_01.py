@@ -4,7 +4,13 @@
 class Rectangulo:
 
     def __init__(self, base, altura):
-        pass
+        self.base = base
+        self.alt = altura
 
     def area(self):
-        pass
+        return self.base*self.alt
+
+x = Rectangulo(2,3)
+
+
+assert (x.area()) == 6
